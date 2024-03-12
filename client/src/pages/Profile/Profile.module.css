@@ -1,0 +1,166 @@
+.user_profile {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 15px 15px 15px;
+}
+
+.user_profile .container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.user_profile .user_info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  column-gap: 15px;
+  row-gap: 10px;
+}
+
+.user_profile .user_info .image_container {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_profile .user_info .image_container img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  user-select: none;
+  border: 1px solid #eee;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 1s shine linear infinite;
+  -webkit-animation: 1s shine linear infinite;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.user_profile .user_info .top_container {
+  grid-area: 1 / 2 / 2 / 5;
+}
+
+.user_profile .user_info .top_container .controllers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.user_profile .user_info .top_container .controllers .name {
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .user_profile .user_info .top_container .controllers {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 0;
+  }
+}
+
+.user_profile .user_info .top_container .email {
+  font-size: 14px;
+}
+
+.user_profile .user_info .bottom_container {
+  grid-area: 2 / 2 / 3 / 5;
+}
+
+.user_profile .user_info .bottom_container .bio {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.user_profile .user_info .bottom_container .links a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  font-size: 12px;
+  color: #00f;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+@media (max-width: 900px) {
+  .user_profile .user_info .image_container {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .user_profile .user_info .image_container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+  }
+
+  .user_profile .user_info .bottom_container {
+    grid-area: 2 / 1 / 3 / 5;
+  }
+}
+
+.user_profile .posts_container .controllers {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+  list-style: none;
+}
+
+.user_profile .posts_container .controllers li button {
+  outline: none;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.user_profile .posts_container .controllers li button :is(span, svg) {
+  font-size: 14px;
+  color: #777;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.user_profile .posts_container .controllers li button.active :is(span, svg) {
+  color: #000;
+  font-weight: 500;
+}
+
+.user_profile .posts_container .controllers li button:hover :is(span, svg) {
+  color: #000;
+}
+
+.loading_container,
+.error_container {
+  width: 100%;
+  min-height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

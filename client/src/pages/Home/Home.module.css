@@ -1,0 +1,21 @@
+.home {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.home .left_side {
+  width: 100%;
+  flex: 2;
+}
+
+.home .right_side {
+  width: 100%;
+  flex: 1;
+}
+
+@media(max-width: 1200px) {
+  .home .right_side {
+    display: none;
+  }
+}
