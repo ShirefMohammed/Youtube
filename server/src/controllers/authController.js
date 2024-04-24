@@ -203,6 +203,16 @@ const refresh = asyncHandler(async (req, res) => {
 
       const user = await UserModel.findById(decoded.userId);
 
+      if (!user) {
+        return sendResponse(
+          res,
+          404,
+          httpStatusText.FAIL,
+          "Account not found",
+          null
+        );
+      }
+
       const accessToken = generateAccessToken(user._id, user.roles);
 
       const refreshToken = generateRefreshToken(user._id);
@@ -304,7 +314,7 @@ const forgetPassword = asyncHandler(async (req, res) => {
     res,
     200,
     httpStatusText.SUCCESS,
-    "Reset password email sent",
+    "Reset password email sent, check your email",
     null
   );
 });
