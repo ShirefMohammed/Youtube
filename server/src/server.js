@@ -6,8 +6,8 @@ const cookieParser = require("cookie-parser");
 const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/connectDB");
 const authRouter = require("./routes/authRouter");
-// const usersRouter = require("./routes/usersRouter");
-// const videosRouter = require("./routes/videosRouter");
+const usersRouter = require("./routes/usersRouter");
+const videosRouter = require("./routes/videosRouter");
 const handleCors = require("./middleware/handleCors");
 const handleErrors = require("./middleware/errorHandler");
 
@@ -38,8 +38,8 @@ app.get("/", (_, res) =>
   res.sendFile(path.join(__dirname, "views", "index.html"))
 );
 app.use("/api/auth", authRouter);
-// app.use("/api/users", usersRouter);
-// app.use("/api/videos", videosRouter);
+app.use("/api/users", usersRouter);
+app.use("/api/videos", videosRouter);
 
 // Handle not found routes
 app.all("*", (req, res) => {
