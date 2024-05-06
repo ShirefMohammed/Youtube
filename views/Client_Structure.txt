@@ -1,0 +1,294 @@
+Structure of Client/src
+
+D:.
+|   App.jsx
+|   index.css
+|   main.jsx
+|
++---api
+|       axios.js
+|
++---assets
+|       defaultAvatar.png
+|       defaultVideoThumbnail.png
+|       uploadImageIcon.svg
+|       YoutubeLogo.svg
+|
++---components
+|   |   index.js
+|   |
+|   +---PersistLogin
+|   |       PersistLogin.jsx
+|   |       PersistLogin.module.css
+|   |
+|   +---RequireAuth
+|   |       RequireAuth.jsx
+|   |
+|   +---ToastContainerWithProps
+|   |       ToastContainerWithProps.jsx
+|   |
+|   +---UserCard
+|   |       UserCard.jsx
+|   |       UserCard.module.css
+|   |
+|   \---VideoCard
+|           VideoCard.jsx
+|           VideoCard.module.css
+|
++---config
+|       firebaseConfig.js
+|
++---hooks
+|       index.js
+|       useApplyTheme.js
+|       useAxiosPrivate.js
+|       useHandleErrors.js
+|       useInfiniteScroll.js
+|       useLogout.js
+|       useNotify.js
+|       useRefreshToken.js
+|
++---pages
+|   |   index.js
+|   |
+|   +---AdminDashboard
+|   |   |   AdminDashboard.jsx
+|   |   |   AdminDashboard.module.css
+|   |   |
+|   |   \---components
+|   |       +---Header
+|   |       |       Header.jsx
+|   |       |       Header.module.css
+|   |       |
+|   |       +---UserCard
+|   |       |       UserCard.jsx
+|   |       |       UserCard.module.css
+|   |       |
+|   |       +---Users
+|   |       |       Users.jsx
+|   |       |       Users.module.css
+|   |       |
+|   |       +---VideoCard
+|   |       |       VideoCard.jsx
+|   |       |       VideoCard.module.css
+|   |       |
+|   |       \---Videos
+|   |               Videos.jsx
+|   |               Videos.module.css
+|   |
+|   +---Authentication
+|   |   |   Authentication.jsx
+|   |   |   Authentication.module.css
+|   |   |
+|   |   \---components
+|   |       +---ForgetPassword
+|   |       |       ForgetPassword.jsx
+|   |       |       ForgetPassword.module.css
+|   |       |
+|   |       +---Login
+|   |       |       Login.jsx
+|   |       |       Login.module.css
+|   |       |
+|   |       \---Register
+|   |               Register.jsx
+|   |               Register.module.css
+|   |
+|   +---CreateVideo
+|   |       CreateVideo.jsx
+|   |       CreateVideo.module.css
+|   |
+|   +---Explore
+|   |       Explore.jsx
+|   |       Explore.module.css
+|   |
+|   +---Home
+|   |       Home.jsx
+|   |       Home.module.css
+|   |
+|   +---MainContent
+|   |   |   MainContent.jsx
+|   |   |   MainContent.module.css
+|   |   |
+|   |   \---components
+|   |       +---Navbar
+|   |       |       Navbar.jsx
+|   |       |       Navbar.module.css
+|   |       |
+|   |       \---Sidebar
+|   |               Sidebar.jsx
+|   |               Sidebar.module.css
+|   |
+|   +---NoResourceFound
+|   |       NoResourceFound.jsx
+|   |       NoResourceFound.module.css
+|   |
+|   +---NoServerResponse
+|   |       NoServerResponse.jsx
+|   |       NoServerResponse.module.css
+|   |
+|   +---NoTFoundPage
+|   |       NoTFoundPage.jsx
+|   |       NoTFoundPage.module.css
+|   |
+|   +---Notifications
+|   |       Notifications.jsx
+|   |       Notifications.module.css
+|   |
+|   +---Profile
+|   |   |   Profile.jsx
+|   |   |   Profile.module.css
+|   |   |
+|   |   \---components
+|   |       +---DeleteAccount
+|   |       |       DeleteAccount.jsx
+|   |       |       DeleteAccount.module.css
+|   |       |
+|   |       +---ProfileControllers
+|   |       |       ProfileControllers.jsx
+|   |       |       ProfileControllers.module.css
+|   |       |
+|   |       \---VideosViewer
+|   |               VideosViewer.jsx
+|   |               VideosViewer.module.css
+|   |
+|   +---Search
+|   |       Search.jsx
+|   |       Search.module.css
+|   |
+|   +---ServerError
+|   |       ServerError.jsx
+|   |       ServerError.module.css
+|   |
+|   +---Settings
+|   |   |   Settings.jsx
+|   |   |   Settings.module.css
+|   |   |
+|   |   \---components
+|   |       +---CommentCard
+|   |       |       CommentCard.jsx
+|   |       |       CommentCard.module.css
+|   |       |
+|   |       +---Controllers
+|   |       |       Controllers.jsx
+|   |       |       Controllers.module.css
+|   |       |
+|   |       +---CreatedComments
+|   |       |       CreatedComments.jsx
+|   |       |       CreatedComments.module.css
+|   |       |
+|   |       +---CreatedVideos
+|   |       |       CreatedVideos.jsx
+|   |       |       CreatedVideos.module.css
+|   |       |
+|   |       +---LikedVideos
+|   |       |       LikedVideos.jsx
+|   |       |       LikedVideos.module.css
+|   |       |
+|   |       +---SavedVideos
+|   |       |       SavedVideos.jsx
+|   |       |       SavedVideos.module.css
+|   |       |
+|   |       +---Subscribers
+|   |       |       Subscribers.jsx
+|   |       |       Subscribers.module.css
+|   |       |
+|   |       +---Subscriptions
+|   |       |       Subscriptions.jsx
+|   |       |       Subscriptions.module.css
+|   |       |
+|   |       +---UpdateComment
+|   |       |       UpdateComment.jsx
+|   |       |       UpdateComment.module.css
+|   |       |
+|   |       +---UserCard
+|   |       |       UserCard.jsx
+|   |       |       UserCard.module.css
+|   |       |
+|   |       +---UsersViewer
+|   |       |       UsersViewer.jsx
+|   |       |       UsersViewer.module.css
+|   |       |
+|   |       +---VideoCard
+|   |       |       VideoCard.jsx
+|   |       |       VideoCard.module.css
+|   |       |
+|   |       \---VideosViewer
+|   |               VideosViewer.jsx
+|   |               VideosViewer.module.css
+|   |
+|   +---Subscriptions
+|   |       Subscriptions.jsx
+|   |       Subscriptions.module.css
+|   |
+|   +---Trending
+|   |       Trending.jsx
+|   |       Trending.module.css
+|   |
+|   +---Unauthorized
+|   |       Unauthorized.jsx
+|   |       Unauthorized.module.css
+|   |
+|   +---UpdateProfile
+|   |   |   UpdateProfile.jsx
+|   |   |   UpdateProfile.module.css
+|   |   |
+|   |   \---components
+|   |       +---DeleteAccount
+|   |       |       DeleteAccount.jsx
+|   |       |       DeleteAccount.module.css
+|   |       |
+|   |       +---UpdateAvatar
+|   |       |       UpdateAvatar.jsx
+|   |       |       UpdateAvatar.module.css
+|   |       |
+|   |       +---UpdatePassword
+|   |       |       UpdatePassword.jsx
+|   |       |       UpdatePassword.module.css
+|   |       |
+|   |       \---UpdateUserInfo
+|   |               UpdateUserInfo.jsx
+|   |               UpdateUserInfo.module.css
+|   |
+|   +---UpdateVideo
+|   |       UpdateVideo.jsx
+|   |       UpdateVideo.module.css
+|   |
+|   \---Video
+|       |   Video.jsx
+|       |   Video.module.css
+|       |
+|       \---components
+|           +---CommentCard
+|           |       CommentCard.jsx
+|           |       CommentCard.module.css
+|           |
+|           +---Comments
+|           |       Comments.jsx
+|           |       Comments.module.css
+|           |
+|           +---SuggestedVideos
+|           |       SuggestedVideos.jsx
+|           |       SuggestedVideos.module.css
+|           |
+|           +---UpdateComment
+|           |       UpdateComment.jsx
+|           |       UpdateComment.module.css
+|           |
+|           \---VideoDetails
+|                   VideoDetails.jsx
+|                   VideoDetails.module.css
+|
++---store
+|   |   store.js
+|   |
+|   \---slices
+|           notificationsSlice.js
+|           userSlice.js
+|
+\---utils
+        formatCreatedAt.js
+        formatLikes.js
+        handleImageQuality.js
+        notifications_types_list.js
+        roles_list.js
+        uploadFileToFirebase.js
