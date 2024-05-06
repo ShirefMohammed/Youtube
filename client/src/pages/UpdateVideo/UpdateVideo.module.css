@@ -1,0 +1,146 @@
+.update_video_page {
+  padding: 15px;
+  min-height: calc(100vh - 75px);
+  color: var(--text);
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .update_video_page {
+    min-height: calc(100vh - (75px + 65px));
+  }
+}
+
+.update_video_form {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_video_form h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 500px;
+  margin-bottom: 10px;
+}
+
+.update_video_form .error_message {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: firebrick;
+  background-color: lightpink;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_video_form .success_message {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #008000;
+  background-color: #d9f7d6;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_video_form :is(input, textarea) {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_video_form textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.update_video_form :is(input, textarea):disabled {
+  opacity: 0.6;
+}
+
+.update_video_form > :is(input, textarea, div) {
+  margin-bottom: 10px;
+}
+
+.update_video_form :is(.thumbnail, .video) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.update_video_form :is(.thumbnail, .video) input {
+  flex: 1;
+}
+
+.update_video_form .thumbnail .upload_thumbnail_progress,
+.update_video_form .video .upload_video_progress {
+  width: 50px;
+  height: 50px;
+  font-size: 14px;
+  border: 1px solid var(--bgLighter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_video_form button[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 8px 45px;
+  margin: auto;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: inherit;
+  background-color: var(--bgLighter);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_video_form button[type="submit"] span {
+  font-size: 12px;
+  font-weight: 500;
+}

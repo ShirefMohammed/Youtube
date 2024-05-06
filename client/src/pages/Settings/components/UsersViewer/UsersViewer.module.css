@@ -1,0 +1,24 @@
+.users_viewer {
+  width: 100%;
+}
+
+.users_viewer .loading_container {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.users_viewer .users {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.users_viewer .no_users {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}

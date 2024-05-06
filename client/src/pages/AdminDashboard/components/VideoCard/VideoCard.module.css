@@ -1,0 +1,42 @@
+.video_card {
+  position: relative;
+}
+
+.video_card .delete_video_btn {
+  outline: none;
+  border: none;
+  background: #fff;
+  box-shadow: 2px 2px 5px 0 #444;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.video_card .delete_video_btn svg {
+  font-size: 16px;
+  color: #444;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.video_card .delete_video_btn:hover svg {
+  color: #f00;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}

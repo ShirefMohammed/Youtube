@@ -1,0 +1,31 @@
+.update_profile {
+  width: 100%;
+  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.update_profile h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.update_profile>div {
+  margin-bottom: 15px;
+}
+
+.loading_container {
+  padding: 15px;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .loading_container {
+    min-height: calc(100vh - (75px + 65px));
+  }
+}

@@ -1,0 +1,37 @@
+.loading_container {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .loading_container {
+    min-height: calc(100vh - (75px + 65px));
+  }
+}
+
+.video {
+  width: 100%;
+  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+  display: flex;
+  gap: 20px;
+}
+
+.video .left_side {
+  flex: 2;
+}
+
+.video .right_side {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .video .right_side {
+    display: none;
+  }
+}

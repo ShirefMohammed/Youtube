@@ -1,0 +1,89 @@
+.update_avatar {
+  padding: 15px;
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_avatar h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.update_avatar .error_message {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: firebrick;
+  background-color: lightpink;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_avatar .success_message {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #008000;
+  background-color: #d9f7d6;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_avatar > div {
+  width: 100%;
+  position: relative;
+}
+
+.update_avatar .avatar {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: inherit;
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.update_avatar .avatar img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  user-select: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.update_avatar .avatar input[type="file"] {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background-color: inherit;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}

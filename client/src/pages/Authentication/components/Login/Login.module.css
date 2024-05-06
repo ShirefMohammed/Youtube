@@ -1,0 +1,110 @@
+.login_form {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.login_form h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 500px;
+  margin-bottom: 10px;
+}
+
+.login_form .error_message {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: firebrick;
+  background-color: lightpink;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.login_form input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.login_form .persistCheck {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.login_form .persistCheck input[type="checkbox"] {
+  width: fit-content;
+  margin-bottom: 0;
+}
+
+.login_form .persistCheck label {
+  font-size: 14px;
+}
+
+.login_form button[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 8px 45px;
+  margin: auto;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: inherit;
+  background-color: var(--bgLighter);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.login_form button[type="submit"] span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.login_form .controllers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.login_form .controllers button {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  text-decoration: underline;
+  color: inherit;
+  background: none;
+}

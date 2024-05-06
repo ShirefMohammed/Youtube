@@ -1,0 +1,23 @@
+.no_server_response {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .no_server_response {
+    min-height: calc(100vh - (75px + 65px));
+  }
+}
+
+.no_server_response h2 {
+  font-weight: 500;
+}
+
+.no_server_response p {
+  font-size: 14px;
+}

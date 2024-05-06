@@ -1,0 +1,120 @@
+.delete_account {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 0, 0, 80%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+}
+
+.delete_account form {
+  width: calc(100% - 30px);
+  max-width: 400px;
+  max-height: calc(100% - 30px);
+  overflow-y: auto;
+  padding: 15px;
+  background-color: var(--bgLighter);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.delete_account form h2 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.delete_account form .close_btn {
+  outline: none;
+  border: none;
+  color: inherit;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.delete_account form .close_btn svg {
+  font-size: 20px;
+}
+
+.delete_account form .error_message {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: firebrick;
+  background-color: lightpink;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.delete_account form > div {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.delete_account form > div label {
+  font-size: 14px;
+  display: block;
+  width: fit-content;
+  margin-bottom: 5px;
+}
+
+.delete_account input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  color: inherit;
+  background-color: var(--bg);
+  border: 1px solid var(--textSoft);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.delete_account button[type="submit"] {
+  border: none;
+  outline: none;
+  margin: auto;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  color: #fff;
+  background: #f00;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.delete_account button[type="submit"] span {
+  font-size: 12px;
+  font-weight: 500;
+}

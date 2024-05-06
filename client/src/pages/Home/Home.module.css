@@ -1,0 +1,25 @@
+.home {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.home .loading_container {
+  padding: 15px;
+  min-height: calc(100vh - 75px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .home .loading_container {
+    min-height: calc(100vh - (75px + 65px));
+  }
+}
+
+.home .videos_container {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 15px;
+}

@@ -1,0 +1,133 @@
+.notifications {
+  width: 100%;
+  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.notifications h2 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.notifications .notifications_list {
+  list-style: none;
+}
+
+.notifications .notifications_list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.notifications .no_notifications {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.new_subscriber_notification_card,
+.new_comment_notification_card {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--bgLighter);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.new_subscriber_notification_card:hover,
+.new_comment_notification_card:hover {
+  background: var(--bgLighter);
+}
+
+.new_subscriber_notification_card .notification_desc,
+.new_comment_notification_card .notification_desc {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.new_subscriber_notification_card .notification_desc img,
+.new_comment_notification_card .notification_desc img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  user-select: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.new_subscriber_notification_card .notification_desc p,
+.new_comment_notification_card .notification_desc p,
+.new_subscriber_notification_card .notification_desc p a,
+.new_comment_notification_card .notification_desc p a {
+  font-size: 14px;
+}
+
+.new_subscriber_notification_card .notification_desc p a:hover,
+.new_comment_notification_card .notification_desc p a:hover {
+  text-decoration: underline;
+}
+
+.new_comment_notification_card > a {
+  width: fit-content;
+  font-size: 14px;
+  margin: 12px 0 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.new_comment_notification_card > a svg {
+  font-size: 14px;
+}
+
+.new_comment_notification_card > a:hover {
+  text-decoration: underline;
+}
+
+.new_comment_notification_card .comment_content > span {
+  font-size: 14px;
+}
+
+.new_comment_notification_card .comment_content pre {
+  width: 100%;
+  font-size: 12px;
+  word-break: auto-phrase;
+  white-space: pre-wrap;
+  padding: 10px;
+  border: 1px solid var(--soft);
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.new_comment_notification_card .comment_content pre button {
+  display: block;
+  outline: none;
+  border: none;
+  color: inherit;
+  background: none;
+  font-size: 12px;
+}
+
+.new_subscriber_notification_card .createdAt,
+.new_comment_notification_card .createdAt {
+  font-size: 12px;
+  margin-top: 10px;
+}

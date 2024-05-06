@@ -1,0 +1,24 @@
+.controllers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.controllers a {
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid var(--bgLighter);
+  text-transform: capitalize;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.controllers a.active {
+  background: var(--bgLighter);
+}

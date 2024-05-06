@@ -1,0 +1,13 @@
+.admin_dashboard {
+  width: 100%;
+  padding: 15px;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.admin_dashboard .line {
+  width: 80%;
+  height: 1px;
+  background-color: var(--bgLighter);
+  margin: 25px auto;
+}

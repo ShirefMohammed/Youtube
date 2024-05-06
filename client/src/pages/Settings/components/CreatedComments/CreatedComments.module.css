@@ -1,0 +1,24 @@
+.created_comments {
+  width: 100%;
+}
+
+.created_comments .loading_container {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.created_comments .comments {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.created_comments .no_comments {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+}

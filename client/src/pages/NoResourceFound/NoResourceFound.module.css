@@ -1,0 +1,23 @@
+.no_resource_found {
+  width: 100%;
+  min-height: calc(100vh - 75px);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .no_resource_found {
+    min-height: calc(100vh - (75px + 65px));
+  }
+}
+
+.no_resource_found h2 {
+  font-weight: 500;
+}
+
+.no_resource_found p {
+  font-size: 14px;
+}
