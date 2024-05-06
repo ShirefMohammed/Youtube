@@ -1,21 +1,28 @@
+const http = require("node:http");
+const path = require("node:path");
 const express = require("express");
 const dotenv = require("dotenv");
-const path = require("node:path");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const { Server } = require("socket.io");
 const corsOptions = require("./config/corsOptions");
+const allowedOrigins = require("./config/allowedOrigins");
 const connectDB = require("./config/connectDB");
 const authRouter = require("./routes/authRouter");
 const usersRouter = require("./routes/usersRouter");
 const videosRouter = require("./routes/videosRouter");
 const handleCors = require("./middleware/handleCors");
 const handleErrors = require("./middleware/errorHandler");
+const handleUnusedFirebaseFiles = require("./utils/handleUnusedFirebaseFiles");
+const handleUnverifiedAccounts = require("./utils/handleUnverifiedAccounts");
+const socketController = require("./controllers/socketController");
 
 // Use environment variables
 dotenv.config();
 
 // Create server
 const app = express();
+const server = http.createServer(app);
 const _PORT = process.env.PORT;
 
 // Connect to mongo database
@@ -53,7 +60,7 @@ app.all("*", (req, res) => {
   }
 });
 
-// Ping the server every 14 minutes for render platform
+// Ping the server every 14 minutes to refresh on render platform
 setInterval(() => {
   fetch(process.env.SERVER_URL)
     .then((res) => {
@@ -68,10 +75,23 @@ setInterval(() => {
     });
 }, 840000);
 
+// Handle unused files and unverified accounts every 1 hour
+setInterval(() => {
+  handleUnusedFirebaseFiles();
+  handleUnverifiedAccounts();
+}, 3600000);
+
+// Socket.IO
+const io = new Server(server, {
+  pingTimeout: 60000,
+  cors: { origin: allowedOrigins },
+});
+io.on("connection", (socket) => socketController(io, socket));
+
 // Handle error middleware
 app.use(handleErrors);
 
 // Listen for requests
-app.listen(_PORT, () => {
+server.listen(_PORT, () => {
   console.log(`Server running on ${process.env.SERVER_URL} for port ${_PORT}`);
 });
