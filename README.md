@@ -17,7 +17,7 @@ This project is a YouTube clone app developed to showcase my skills in full-stac
 - 📈 Stay updated with trending and recommended videos
 - 📬 Get notified about new comments and subscribers
 - 📱 Enjoy our app on any device with responsive design
-- 💬 Receive instant Real-time notifications for a seamless experience
+- 💬 Receive real-time notifications for a seamless experience
 - 🚀 We prioritize accessibility, speed, and safety
 
 ## Used Technologies
