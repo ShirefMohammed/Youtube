@@ -1,8 +1,8 @@
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  "https://youtubeserver-shirefmohammeds-projects.vercel.app",
-  "https://youtube-ashen.vercel.app",
+  "https://youtube-server-scf8.onrender.com",
+  "https://youtube-arlw.onrender.com",
 ];
 
 module.exports = allowedOrigins;
