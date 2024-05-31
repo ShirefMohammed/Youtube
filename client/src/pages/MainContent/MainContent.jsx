@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Route, Routes } from "react-router-dom";
-import { RequireAuth, ToastContainerWithProps } from "../../components";
+import { FirstReqLoadingMsg, RequireAuth, ToastContainerWithProps } from "../../components";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Navbar from "./components/Navbar/Navbar";
 import {
@@ -73,6 +73,9 @@ const MainContent = ({ socket }) => {
 
       {/* Toast Container with its props */}
       <ToastContainerWithProps />
+
+      {/* Server First Request Loading Message */}
+      <FirstReqLoadingMsg />
     </div>
   );
 };
