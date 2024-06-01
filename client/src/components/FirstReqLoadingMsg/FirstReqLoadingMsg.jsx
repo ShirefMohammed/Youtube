@@ -43,8 +43,8 @@ const FirstReqLoadingMsg = () => {
     <>
       {openMessage && (
         <div className={style.first_req_loading_msg}>
-          <p>Please wait from 40 to 60 seconds until server response</p>
-          <p style={{ fontSize: "2em" }}>{responseTime} seconds</p>
+          <p>Please wait from 45 to 60 seconds until server response</p>
+          <p>{responseTime} seconds</p>
           <p>
             Info: This delay happens on the first response because the app is
             deployed on a free host on Render.

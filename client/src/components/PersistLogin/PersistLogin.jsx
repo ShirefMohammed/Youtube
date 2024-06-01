@@ -8,13 +8,13 @@ import {
   useHandleErrors,
   useRefreshToken,
 } from "../../hooks";
+import { FirstReqLoadingMsg } from "../";
 import {
   setNotifications,
   pushNotification,
 } from "../../store/slices/notificationsSlice";
 import YoutubeLogo from "../../assets/YoutubeLogo.svg";
 import style from "./PersistLogin.module.css";
-
 const PersistLogin = ({ socket }) => {
   const user = useSelector((state) => state.user);
 
@@ -95,6 +95,8 @@ const PersistLogin = ({ socket }) => {
         ) : // If refresh is loading to fetch accessToken by jwt
         refreshLoad ? (
           <div className={style.loading_container}>
+            {/* Server First Request Loading Message */}
+            <FirstReqLoadingMsg />
             <img src={YoutubeLogo} alt="Youtube_Logo" />
             <div className={style.creator}>
               <span>Created by</span>
